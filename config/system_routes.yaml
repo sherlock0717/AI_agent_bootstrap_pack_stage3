@@ -31,4 +31,5 @@ standard_entrypoints:
   daily_close: "scripts/close_day.ps1"
   publish_snapshot: "scripts/publish_snapshot.ps1"
   preflight_check: "scripts/preflight_check.ps1"
+  weekly_maintenance_cycle: "scripts/weekly_maintenance_cycle.ps1"
 
