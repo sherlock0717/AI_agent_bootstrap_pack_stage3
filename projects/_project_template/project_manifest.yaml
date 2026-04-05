@@ -1,5 +1,16 @@
-project:
-  id: template
-  name: Template
-  type: pilot_project
-  status: planning
+﻿project:
+  id: "__PROJECT_ID__"
+  name: "__PROJECT_NAME__"
+  type: "__PROJECT_TYPE__"
+  status: "active"
+  role: "__PROJECT_ROLE__"
+  repo_mode: "external"
+  root_path: "__EXTERNAL_PROJECT_ROOT_PATH__"
+  owner: "__OWNER__"
+  primary_workspace: "Cursor"
+  local_agents_path: "projects/__PROJECT_NAME__/AGENTS.local.md"
+  knowledge_scope: "knowledge/projects/__PROJECT_NAME__"
+  outputs_path: "outputs/projects/__PROJECT_NAME__"
+  log_path: "logs/projects/__PROJECT_NAME__"
+  description: >
+    __PROJECT_DESCRIPTION__

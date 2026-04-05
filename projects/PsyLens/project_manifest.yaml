@@ -1,7 +1,17 @@
-project:
+﻿project:
   id: psylens
   name: PsyLens
   type: pilot_project
   status: active
-  root_path: C:\Users\22358\Desktop\项目\PsyLens_GitHub_Repo\PsyLens
   role: system_validation_subproject
+  repo_mode: external
+  root_path: "C:/Users/22358/Desktop/项目/PsyLens_GitHub_Repo/PsyLens"
+  owner: "孙海澄"
+  primary_workspace: "Cursor"
+  local_agents_path: "projects/PsyLens/AGENTS.local.md"
+  knowledge_scope: "knowledge/projects/PsyLens"
+  outputs_path: "outputs/projects/PsyLens"
+  log_path: "logs/projects/PsyLens"
+  description: >
+    AI 工作系统的试运行与方法验证子项目，
+    用于验证系统在真实项目中的接入、规则、脚本和交付链路。
