@@ -36,4 +36,5 @@ standard_entrypoints:
   deliverable_new: "scripts/new_deliverable.ps1"
   deliverable_list: "scripts/list_project_deliverables.ps1"
   project_review_cycle: "scripts/project_review_cycle.ps1"
+  project_lifecycle_bootstrap: "scripts/project_lifecycle_bootstrap.ps1"
 
