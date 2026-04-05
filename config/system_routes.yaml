@@ -41,4 +41,5 @@ standard_entrypoints:
   project_ops: "scripts/project_ops.ps1"
   system_release_snapshot: "scripts/system_release_snapshot.ps1"
   workspace_project_bootstrap: "scripts/create_project_in_workspace.ps1"
+  v1_freeze_guide: "docs/system/v1_freeze_guide.md"
 

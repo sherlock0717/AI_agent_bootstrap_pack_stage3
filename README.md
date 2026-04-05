@@ -71,3 +71,8 @@ cd scripts
 - 默认外部项目根目录：C:/Users/22358/Desktop/项目
 - PsyLens 只是当前已接入的样例项目，不是系统默认项目
 - 后续新项目应优先从默认外部项目根目录中创建，再通过系统接入
+
+## V1 Freeze Guide
+当前系统 V1 的冻结边界、默认工作区、样例项目定位、日常使用方法与 DeepSeek API 固定用法，请见：
+
+- `docs/system/v1_freeze_guide.md`
