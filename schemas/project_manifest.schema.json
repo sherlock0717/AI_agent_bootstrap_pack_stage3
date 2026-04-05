@@ -1,0 +1,43 @@
+﻿{
+  ""$schema"": ""https://json-schema.org/draft/2020-12/schema"",
+  ""title"": ""project_manifest"",
+  ""type"": ""object"",
+  ""required"": [""project""],
+  ""properties"": {
+    ""project"": {
+      ""type"": ""object"",
+      ""required"": [
+        ""id"",
+        ""name"",
+        ""type"",
+        ""status"",
+        ""role"",
+        ""repo_mode"",
+        ""root_path"",
+        ""owner"",
+        ""primary_workspace"",
+        ""local_agents_path"",
+        ""knowledge_scope"",
+        ""outputs_path"",
+        ""log_path"",
+        ""description""
+      ],
+      ""properties"": {
+        ""id"": { ""type"": ""string"" },
+        ""name"": { ""type"": ""string"" },
+        ""type"": { ""type"": ""string"" },
+        ""status"": { ""type"": ""string"" },
+        ""role"": { ""type"": ""string"" },
+        ""repo_mode"": { ""type"": ""string"" },
+        ""root_path"": { ""type"": ""string"" },
+        ""owner"": { ""type"": ""string"" },
+        ""primary_workspace"": { ""type"": ""string"" },
+        ""local_agents_path"": { ""type"": ""string"" },
+        ""knowledge_scope"": { ""type"": ""string"" },
+        ""outputs_path"": { ""type"": ""string"" },
+        ""log_path"": { ""type"": ""string"" },
+        ""description"": { ""type"": ""string"" }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+﻿{
+  ""$schema"": ""https://json-schema.org/draft/2020-12/schema"",
+  ""title"": ""system_routes"",
+  ""type"": ""object"",
+  ""required"": [""daily_routes"", ""standard_entrypoints""],
+  ""properties"": {
+    ""daily_routes"": { ""type"": ""object"" },
+    ""standard_entrypoints"": { ""type"": ""object"" }
+  }
+}

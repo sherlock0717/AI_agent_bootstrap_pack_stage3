@@ -1,0 +1,28 @@
+﻿{
+  ""$schema"": ""https://json-schema.org/draft/2020-12/schema"",
+  ""title"": ""task_router"",
+  ""type"": ""object"",
+  ""required"": [""task_routes""],
+  ""properties"": {
+    ""task_routes"": {
+      ""type"": ""object"",
+      ""additionalProperties"": {
+        ""type"": ""object"",
+        ""required"": [
+          ""preferred_tool"",
+          ""fallback_tool"",
+          ""script_first"",
+          ""notes_target"",
+          ""description""
+        ],
+        ""properties"": {
+          ""preferred_tool"": { ""type"": ""string"" },
+          ""fallback_tool"": { ""type"": ""string"" },
+          ""script_first"": { ""type"": [""boolean"", ""string""] },
+          ""notes_target"": { ""type"": ""string"" },
+          ""description"": { ""type"": ""string"" }
+        }
+      }
+    }
+  }
+}
