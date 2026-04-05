@@ -1,0 +1,24 @@
+﻿path_rules:
+  scripts:
+    apply_to:
+      - "scripts/**"
+    purpose: "执行脚本、自动化入口、系统动作"
+    rule_file: ".cursor/rules/20_scripts_rule.md"
+
+  knowledge:
+    apply_to:
+      - "knowledge/**"
+    purpose: "长期知识沉淀、会话、决策、项目知识、复盘"
+    rule_file: ".cursor/rules/30_knowledge_rule.md"
+
+  docs:
+    apply_to:
+      - "docs/**"
+    purpose: "稳定说明文档、流程文档、治理文档"
+    rule_file: ".cursor/rules/40_docs_rule.md"
+
+  projects:
+    apply_to:
+      - "projects/**"
+    purpose: "外部项目接入、manifest、local agents、接入说明"
+    rule_file: ".cursor/rules/50_projects_rule.md"
