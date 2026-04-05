@@ -38,4 +38,5 @@ standard_entrypoints:
   project_review_cycle: "scripts/project_review_cycle.ps1"
   project_lifecycle_bootstrap: "scripts/project_lifecycle_bootstrap.ps1"
   project_status_snapshot: "scripts/project_status_snapshot.ps1"
+  project_ops: "scripts/project_ops.ps1"
 
