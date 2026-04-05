@@ -68,7 +68,7 @@ Generate deliverables and outputs
 Capture reusable knowledge
   ↓
 Review, snapshot, and continue
-
+```
 
 ## Quick Start
 
@@ -93,7 +93,7 @@ cd C:\Users\22358\Desktop\系统\AI_agent_bootstrap_pack_stage3\scripts
 ### 4) Start work on a project
 
 ```powershell
-.\project_ops.ps1 -Action "start" -ProjectName "<ProjectName>" -TaskType "documentation_planning" -Complexity "medium" -SessionTitle "Project work start" -NeedRepoContext -CreateProjectNote -ProjectNoteTitle "Project work note"
+.\project_ops.ps1 -Action "start" -ProjectName "YourProject" -TaskType "documentation_planning" -Complexity "medium" -SessionTitle "Project work start" -NeedRepoContext -CreateProjectNote -ProjectNoteTitle "Project work note"
 ```
 
 ### 5) Create a new project in the external workspace
@@ -113,7 +113,7 @@ Then run it for real after checking the result:
 ### 6) Check project status
 
 ```powershell
-.\project_ops.ps1 -Action "status" -ProjectName "<ProjectName>" -StatusTitle "Current project status"
+.\project_ops.ps1 -Action "status" -ProjectName "YourProject" -StatusTitle "Current project status"
 ```
 
 ### 7) End the day and publish a snapshot
