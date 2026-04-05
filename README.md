@@ -2,7 +2,7 @@
 
 A reusable AI work system for turning ideas into real projects with structured rules, scripts, project onboarding, knowledge capture, and deliverable workflows.
 
-> Build once, reuse across projects.
+> Build once, reuse across projects.  
 > Use AI for real work — not just one-off chats.
 
 ## Start here
@@ -15,46 +15,56 @@ Choose the path that fits what you want to do:
 
 This repository is designed to help you move from loose AI chats to repeatable project workflows.
 
+---
+
 ## What this system helps you do
 
-This repository is designed for people who want to use AI as a **repeatable work system**, not just as a single prompt tool.
+This repository is built for people who want to use AI as a **repeatable work system**, not just as a prompt box.
 
 It helps you:
+
 - start new projects from a stable workflow instead of rebuilding everything from scratch
 - keep rules, scripts, notes, decisions, and outputs in a clear structure
 - onboard external projects into one reusable operating system
-- turn messy AI collaboration into traceable sessions, deliverables, and project records
+- turn scattered AI collaboration into traceable sessions, deliverables, and project records
+- separate temporary outputs from long-term knowledge
+- keep project work usable across multiple rounds instead of losing context every time
 
-## Who this is for
+In short, this is a **system root repository** for running AI-assisted work across different real projects.
 
-This system is especially useful if you want to:
-- run multiple AI-assisted projects over time
-- keep long-term knowledge instead of losing context in chats
-- standardize how projects are started, reviewed, and documented
-- combine scripting, project structure, and agent rules into one working setup
+---
 
 ## Why this is different from a normal project template
 
-Most templates give you a folder structure.
-This system gives you an **operating layer** for real work.
+A normal project template usually gives you folders and maybe a starter structure.
 
-It combines:
-- **rules** for how different AI tools should behave
-- **scripts** for repeatable actions and project lifecycle tasks
-- **knowledge capture** for sessions, decisions, reviews, and reusable notes
-- **project onboarding** so real external projects can plug into the system
-- **deliverable workflows** so work ends as briefs, plans, reports, specs, or deck outlines
+This repository goes further. It gives you:
 
-In short: this repo is not just a template for storing files.
-It is a reusable workflow system for managing AI-assisted project work.
+- a reusable **system layer** instead of a one-off project scaffold
+- a defined split between **system repo** and **external real projects**
+- a structured place for **knowledge, outputs, logs, docs, and deliverables**
+- reusable **PowerShell entry points** for daily work, project startup, review, and maintenance
+- a way to onboard future projects into the same operating model
+- a clearer boundary between **temporary execution** and **long-term reusable knowledge**
+
+This means you are not just storing files.  
+You are building a working environment that can support repeated AI-assisted project execution.
+
+---
 
 ## 30-second workflow
 
 ```text
-Idea / task
-  -> create or onboard project
-  -> start project work through script entry points
-  -> use AI tools under shared rules
-  -> capture notes / sessions / decisions
-  -> generate deliverables
-  -> review, snapshot, and reuse the system again
+Idea
+  ↓
+Create project in external workspace
+  ↓
+Onboard project into the system
+  ↓
+Start a structured work session
+  ↓
+Generate deliverables and outputs
+  ↓
+Capture reusable knowledge
+  ↓
+Review, snapshot, and continue
