@@ -66,3 +66,8 @@ cd scripts
 
 ## 当前外部项目
 - PsyLens：系统试运行与方法验证子项目
+
+## Workspace Defaults
+- 默认外部项目根目录：C:/Users/22358/Desktop/项目
+- PsyLens 只是当前已接入的样例项目，不是系统默认项目
+- 后续新项目应优先从默认外部项目根目录中创建，再通过系统接入
