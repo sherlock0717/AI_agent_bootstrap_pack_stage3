@@ -1,0 +1,7 @@
+project:
+  id: psylens
+  name: PsyLens
+  type: pilot_project
+  status: active
+  root_path: C:\Users\22358\Desktop\项目\PsyLens_GitHub_Repo\PsyLens
+  role: system_validation_subproject

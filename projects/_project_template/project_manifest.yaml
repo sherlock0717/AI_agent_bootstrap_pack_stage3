@@ -1,0 +1,5 @@
+project:
+  id: template
+  name: Template
+  type: pilot_project
+  status: planning

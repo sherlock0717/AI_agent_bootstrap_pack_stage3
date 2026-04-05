@@ -1,0 +1,58 @@
+﻿# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+.cursor-cache/
+
+# Logs
+logs/**
+!logs/.gitkeep
+!logs/**/.gitkeep
+
+# Outputs
+outputs/**
+!outputs/.gitkeep
+!outputs/**/.gitkeep
+
+# Temporary scout runtime outputs
+scout/**
+!scout/.gitkeep
+!scout/**/.gitkeep
+
+# Local secrets / env
+.env
+.env.*
+*.secret
+secrets/
+config/local_*.yaml
+
+# Optional local notes
+*.tmp
+*.bak
+
+# Keep tracked knowledge and templates
+!knowledge/**
+!docs/**
+!scripts/**
+!config/**
+!projects/**
+!templates/**
+!obsidian_templates/**
+!prompts/**
+!README.md
+!AGENTS.md
+!CLAUDE.md

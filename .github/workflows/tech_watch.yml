@@ -1,0 +1,23 @@
+name: tech-watch
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * 1'
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run tech scout dry-run
+        run: |
+          python scripts/run_tech_scout.py --config config/tech_watch_sources.yaml --output-dir scout/summaries/latest --dry-run
+      - name: Upload scout summary
+        uses: actions/upload-artifact@v4
+        with:
+          name: tech-scout-summary
+          path: scout/summaries/latest

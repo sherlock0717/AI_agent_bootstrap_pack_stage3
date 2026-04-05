@@ -1,0 +1,14 @@
+project:
+  id: sample_project
+  name: Sample Project
+  type: pilot_project
+  status: active
+  root_path: C:\path\to\project
+  owner_role: user
+  purpose: >-
+    Brief description.
+  inputs: []
+  outputs: []
+  main_scripts: []
+  current_stage: planning
+  local_rules: AGENTS.local.md

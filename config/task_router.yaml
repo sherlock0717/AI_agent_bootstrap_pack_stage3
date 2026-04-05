@@ -1,0 +1,70 @@
+﻿task_routes:
+  system_design:
+    preferred_tool: "chatgpt"
+    fallback_tool: "claude_code"
+    script_first: false
+    notes_target: "knowledge/system"
+    description: "系统结构、流程规划、规则整理"
+
+  code_implementation:
+    preferred_tool: "cursor"
+    fallback_tool: "copilot"
+    script_first: false
+    notes_target: "knowledge/projects"
+    description: "代码实现、脚本修改、文件批量调整"
+
+  debug_refactor:
+    preferred_tool: "claude_code"
+    fallback_tool: "cursor"
+    script_first: false
+    notes_target: "knowledge/projects"
+    description: "复杂调试、重构、依赖分析"
+
+  deterministic_task:
+    preferred_tool: "script"
+    fallback_tool: "cursor"
+    script_first: true
+    notes_target: "knowledge/system"
+    description: "可重复执行、应脚本化的步骤"
+
+  documentation_planning:
+    preferred_tool: "chatgpt"
+    fallback_tool: "cursor"
+    script_first: false
+    notes_target: "knowledge/system"
+    description: "文档规划、方法说明、交付结构"
+
+  project_onboarding:
+    preferred_tool: "script"
+    fallback_tool: "chatgpt"
+    script_first: true
+    notes_target: "knowledge/system"
+    description: "新项目接入、注册、模板复制"
+
+  health_check:
+    preferred_tool: "script"
+    fallback_tool: "cursor"
+    script_first: true
+    notes_target: "knowledge/system"
+    description: "系统或项目健康检查"
+
+  tech_scout:
+    preferred_tool: "script"
+    fallback_tool: "chatgpt"
+    script_first: true
+    notes_target: "knowledge/system/tech_watch"
+    description: "技术雷达、来源监控、更新摘要"
+
+  session_record:
+    preferred_tool: "script"
+    fallback_tool: "chatgpt"
+    script_first: true
+    notes_target: "knowledge/sessions"
+    description: "工作会话记录"
+
+  decision_record:
+    preferred_tool: "script"
+    fallback_tool: "chatgpt"
+    script_first: true
+    notes_target: "knowledge/decisions"
+    description: "关键决策记录"

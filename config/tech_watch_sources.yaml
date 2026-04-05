@@ -1,0 +1,17 @@
+sources:
+  - name: openai_docs_models
+    kind: page
+    url: https://platform.openai.com/docs/models
+    tags: [models, api, openai]
+  - name: claude_code_docs
+    kind: page
+    url: https://docs.anthropic.com/en/docs/claude-code/overview
+    tags: [claude-code, anthropic, coding-agent]
+  - name: cursor_changelog
+    kind: page
+    url: https://cursor.com/changelog
+    tags: [cursor, ide, coding-agent]
+  - name: github_copilot_docs
+    kind: page
+    url: https://docs.github.com/en/copilot
+    tags: [copilot, github, coding-agent]

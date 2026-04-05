@@ -1,0 +1,27 @@
+﻿daily_routes:
+  start_day:
+    - "run_system_check.ps1"
+    - "review knowledge/decisions/_index.md"
+    - "start_system_session.ps1"
+
+  start_project_work:
+    - "route_task.ps1"
+    - "start_project_session.ps1"
+    - "check project notes if needed"
+
+  close_day:
+    - "new_decision_note.ps1 when major decisions exist"
+    - "refresh_knowledge_indexes.ps1"
+    - "review outputs and logs"
+
+standard_entrypoints:
+  system_health: "scripts/run_system_check.ps1"
+  system_session: "scripts/start_system_session.ps1"
+  decision_note: "scripts/new_decision_note.ps1"
+  system_note: "scripts/new_system_note.ps1"
+  project_note: "scripts/new_project_note.ps1"
+  scout_manual: "scripts/run_scout_manual.ps1"
+  knowledge_refresh: "scripts/refresh_knowledge_indexes.ps1"
+  project_registration: "scripts/register_external_project.ps1"
+  task_routing: "scripts/route_task.ps1"
+  project_session: "scripts/start_project_session.ps1"

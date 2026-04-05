@@ -1,0 +1,30 @@
+﻿tools:
+  cursor:
+    primary_use: "代码与脚本实现"
+    use_when:
+      - "需要读项目代码库"
+      - "需要批量改文件"
+      - "需要调试本地脚本"
+    avoid_when:
+      - "只是讨论思路，还没进入实现"
+
+  claude_code:
+    primary_use: "复杂调试与规则梳理"
+    use_when:
+      - "需要分析长链依赖"
+      - "需要做复杂重构"
+      - "需要解释代码层问题"
+
+  chatgpt:
+    primary_use: "系统设计、流程整理、文档规划"
+    use_when:
+      - "需要明确系统结构"
+      - "需要整理规则"
+      - "需要拆解下一阶段路线"
+
+  copilot:
+    primary_use: "repo内快速补全与实现"
+    use_when:
+      - "已经在IDE里写代码"
+      - "需要快速生成样板"
+      - "需要局部补全"

@@ -1,0 +1,49 @@
+planner:
+  primary: chatgpt_or_claude
+  use_for:
+    - 研究问题定义
+    - PRD草案
+    - 方法设计
+    - 输出结构设计
+
+coder:
+  primary: cursor
+  fallback: copilot_agent_mode
+  use_for:
+    - 读代码库
+    - 改脚本
+    - 跑命令
+    - 修bug
+    - 生成测试样例
+
+heavy_debug:
+  primary: claude_code
+  use_for:
+    - 复杂重构
+    - 多文件依赖分析
+    - 长链路debug
+    - hooks / memory / skills 设计
+
+batch_structuring:
+  primary: deepseek
+  use_for:
+    - 批量标签初分
+    - 批量摘要
+    - JSON结构化输出
+
+control_plane:
+  primary: openclaw_optional
+  use_for:
+    - 远程唤起
+    - 多渠道触发
+    - 轻量总调度
+  note: 当前阶段非必须，不应成为核心依赖
+
+knowledge_base:
+  primary: obsidian
+  use_for:
+    - PRD
+    - 决策记录
+    - 会话摘要
+    - backlog
+    - 临时记忆
