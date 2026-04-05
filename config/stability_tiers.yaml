@@ -1,0 +1,43 @@
+﻿stability_tiers:
+  stable_core:
+    description: "短期不建议大改的核心结构"
+    items:
+      - "config/project_registry.yaml"
+      - "config/system_routes.yaml"
+      - "config/task_router.yaml"
+      - "config/path_rules.yaml"
+      - "scripts/start_day.ps1"
+      - "scripts/preflight_check.ps1"
+      - "scripts/run_maintenance_cycle.ps1"
+      - "scripts/close_day.ps1"
+      - "scripts/publish_snapshot.ps1"
+      - "scripts/project_ops.ps1"
+      - "CLAUDE.md"
+      - "AGENTS.md"
+
+  guarded:
+    description: "可以改，但应谨慎并检查影响范围"
+    items:
+      - "scripts/validate_configs.ps1"
+      - "scripts/project_lifecycle_bootstrap.ps1"
+      - "scripts/project_review_cycle.ps1"
+      - "scripts/project_status_snapshot.ps1"
+      - "scripts/start_project_work.ps1"
+      - "config/deliverable_types.yaml"
+
+  experimental:
+    description: "允许继续打磨，但不应破坏稳定层"
+    items:
+      - "scripts/weekly_maintenance_cycle.ps1"
+      - "templates/deliverables/**"
+      - "knowledge/system/reviews/**"
+      - "knowledge/projects/**/reviews/**"
+      - "knowledge/projects/**/snapshots/**"
+
+  deferred:
+    description: "当前阶段先不推进的方向"
+    items:
+      - "complex project typing system"
+      - "GUI dashboard"
+      - "heavy CI automation"
+      - "over-specialized project templates"
