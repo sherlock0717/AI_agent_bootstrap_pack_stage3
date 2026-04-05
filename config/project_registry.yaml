@@ -1,12 +1,12 @@
-﻿projects:
+projects:
   - id: psylens
     name: PsyLens
-    type: sample_project
+    type: pilot_project
     status: active
-    role: sample_registered_subproject
+    role: system_validation_subproject
     repo_mode: external
     root_path: "C:/Users/22358/Desktop/项目/PsyLens_GitHub_Repo/PsyLens"
     manifest_path: "projects/PsyLens/project_manifest.yaml"
     local_agents_path: "projects/PsyLens/AGENTS.local.md"
     notes: >
-      当前作为系统接入机制与流程验证用的样例项目，不等同于系统本体，也不是默认项目模板。
+      当前作为系统试运行与方法验证子项目，不等同于系统本体。
