@@ -144,6 +144,8 @@ $manifestFiles = Get-ChildItem -Path $projectsDir -Recurse -File -Filter "projec
 
 foreach ($mf in $manifestFiles) {
   $labelBase = "manifest.$($mf.Directory.Name)"
+  $isTemplateManifest = ($mf.Directory.Name -eq "_project_template")
+
   $requiredManifestPatterns = @(
     @{ key = "project"; pattern = "(?m)^\s*project:\s*$"; desc = "root key project" },
     @{ key = "id"; pattern = "(?m)^\s*id:\s*.+$"; desc = "id" },
@@ -162,8 +164,6 @@ foreach ($mf in $manifestFiles) {
   $outputsPath = Get-RegexValues -Path $mf.FullName -Pattern '(?m)^\s*outputs_path:\s*"?([^"\r\n]+)"?\s*$'
   $logPath = Get-RegexValues -Path $mf.FullName -Pattern '(?m)^\s*log_path:\s*"?([^"\r\n]+)"?\s*$'
   $localAgentsPath = Get-RegexValues -Path $mf.FullName -Pattern '(?m)^\s*local_agents_path:\s*"?([^"\r\n]+)"?\s*$'
-
-  $isTemplateManifest = ($mf.Directory.Name -eq "_project_template")
 
   foreach ($rel in $knowledgeScope) {
     $full = Join-Path $root $rel
@@ -314,4 +314,3 @@ Write-Host ""
 if ($Strict -and $issues.Count -gt 0) {
   exit 1
 }
-
