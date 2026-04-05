@@ -5,6 +5,16 @@ A reusable AI work system for turning ideas into real projects with structured r
 > Build once, reuse across projects.
 > Use AI for real work — not just one-off chats.
 
+## Start here
+
+Choose the path that fits what you want to do:
+
+- **I want to use it now** → go to [Quick Start](#quick-start)
+- **I want to understand the system** → read [Why this is different from a normal project template](#why-this-is-different-from-a-normal-project-template)
+- **I want to see how it works in practice** → jump to [A real usage path](#a-real-usage-path)
+
+This repository is designed to help you move from loose AI chats to repeatable project workflows.
+
 ## What this system helps you do
 
 This repository is designed for people who want to use AI as a **repeatable work system**, not just as a single prompt tool.
