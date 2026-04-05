@@ -1,0 +1,30 @@
+﻿deliverable_types:
+  brief:
+    extension: "md"
+    template: "templates/deliverables/brief.template.md"
+    description: "简要项目说明或提案摘要"
+
+  plan:
+    extension: "md"
+    template: "templates/deliverables/plan.template.md"
+    description: "阶段计划、执行计划、路线规划"
+
+  spec:
+    extension: "md"
+    template: "templates/deliverables/spec.template.md"
+    description: "需求说明、功能说明、系统说明"
+
+  report:
+    extension: "md"
+    template: "templates/deliverables/report.template.md"
+    description: "研究结果、阶段报告、复盘报告"
+
+  deck_outline:
+    extension: "md"
+    template: "templates/deliverables/deck_outline.template.md"
+    description: "汇报 deck 或演示文稿提纲"
+
+  content_script:
+    extension: "md"
+    template: "templates/deliverables/content_script.template.md"
+    description: "讲解稿、视频稿、内容脚本"

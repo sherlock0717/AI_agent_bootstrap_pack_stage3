@@ -32,4 +32,7 @@ standard_entrypoints:
   publish_snapshot: "scripts/publish_snapshot.ps1"
   preflight_check: "scripts/preflight_check.ps1"
   weekly_maintenance_cycle: "scripts/weekly_maintenance_cycle.ps1"
+  deliverable_init: "scripts/init_project_deliverables.ps1"
+  deliverable_new: "scripts/new_deliverable.ps1"
+  deliverable_list: "scripts/list_project_deliverables.ps1"
 
