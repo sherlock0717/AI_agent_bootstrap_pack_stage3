@@ -56,3 +56,5 @@ config/local_*.yaml
 !README.md
 !AGENTS.md
 !CLAUDE.md
+
+CLAUDE.local.md
