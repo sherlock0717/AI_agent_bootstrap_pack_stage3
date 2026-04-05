@@ -68,3 +68,36 @@ Generate deliverables and outputs
 Capture reusable knowledge
   ↓
 Review, snapshot, and continue
+
+## Quick Start
+
+### 1) Go to the scripts directory
+
+```powershell
+cd C:\Users\22358\Desktop\系统\AI_agent_bootstrap_pack_stage3\scripts
+2) Run a basic system check
+.\preflight_check.ps1
+3) Start the day
+.\start_day.ps1 -SessionTitle "Today system work"
+4) Start work on a project
+.\project_ops.ps1 -Action "start" -ProjectName "<ProjectName>" -TaskType "documentation_planning" -Complexity "medium" -SessionTitle "Project work start" -NeedRepoContext -CreateProjectNote -ProjectNoteTitle "Project work note"
+5) Create a new project in the external workspace
+
+Run a dry run first:
+
+.\create_project_in_workspace.ps1 -ProjectId "demo" -ProjectName "Demo" -CreateBrief -CreatePlan -StartFirstWork -NeedRepoContext -DryRun
+
+Then run it for real after checking the result:
+
+.\create_project_in_workspace.ps1 -ProjectId "demo" -ProjectName "Demo" -CreateBrief -CreatePlan -StartFirstWork -NeedRepoContext
+6) Check project status
+.\project_ops.ps1 -Action "status" -ProjectName "<ProjectName>" -StatusTitle "Current project status"
+7) End the day and publish a snapshot
+.\close_day.ps1 -DecisionTitle "Key decisions today"
+.\publish_snapshot.ps1 -Message "chore: update daily system state"
+
+For beginners, the three most important entry points are:
+
+preflight_check.ps1
+start_day.ps1
+project_ops.ps1
