@@ -35,4 +35,5 @@ standard_entrypoints:
   deliverable_init: "scripts/init_project_deliverables.ps1"
   deliverable_new: "scripts/new_deliverable.ps1"
   deliverable_list: "scripts/list_project_deliverables.ps1"
+  project_review_cycle: "scripts/project_review_cycle.ps1"
 
