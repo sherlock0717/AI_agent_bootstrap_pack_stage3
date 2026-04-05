@@ -163,10 +163,14 @@ foreach ($mf in $manifestFiles) {
   $logPath = Get-RegexValues -Path $mf.FullName -Pattern '(?m)^\s*log_path:\s*"?([^"\r\n]+)"?\s*$'
   $localAgentsPath = Get-RegexValues -Path $mf.FullName -Pattern '(?m)^\s*local_agents_path:\s*"?([^"\r\n]+)"?\s*$'
 
+  $isTemplateManifest = ($mf.Directory.Name -eq "_project_template")
+
   foreach ($rel in $knowledgeScope) {
     $full = Join-Path $root $rel
     if (Test-Path $full) {
       Add-Pass "$labelBase.knowledge_scope_ref" "Found knowledge scope: $rel"
+    } elseif ($isTemplateManifest -and $rel -match "__PROJECT_NAME__") {
+      Add-Warning "$labelBase.knowledge_scope_ref" "Template placeholder path not resolved yet: $rel"
     } else {
       Add-Warning "$labelBase.knowledge_scope_ref" "Knowledge scope path not found: $rel"
     }
@@ -176,6 +180,8 @@ foreach ($mf in $manifestFiles) {
     $full = Join-Path $root $rel
     if (Test-Path $full) {
       Add-Pass "$labelBase.outputs_path_ref" "Found outputs path: $rel"
+    } elseif ($isTemplateManifest -and $rel -match "__PROJECT_NAME__") {
+      Add-Warning "$labelBase.outputs_path_ref" "Template placeholder path not resolved yet: $rel"
     } else {
       Add-Warning "$labelBase.outputs_path_ref" "Outputs path not found: $rel"
     }
@@ -185,6 +191,8 @@ foreach ($mf in $manifestFiles) {
     $full = Join-Path $root $rel
     if (Test-Path $full) {
       Add-Pass "$labelBase.log_path_ref" "Found log path: $rel"
+    } elseif ($isTemplateManifest -and $rel -match "__PROJECT_NAME__") {
+      Add-Warning "$labelBase.log_path_ref" "Template placeholder path not resolved yet: $rel"
     } else {
       Add-Warning "$labelBase.log_path_ref" "Log path not found: $rel"
     }
@@ -194,6 +202,8 @@ foreach ($mf in $manifestFiles) {
     $full = Join-Path $root $rel
     if (Test-Path $full) {
       Add-Pass "$labelBase.local_agents_ref" "Found local agents path: $rel"
+    } elseif ($isTemplateManifest -and $rel -match "__PROJECT_NAME__") {
+      Add-Warning "$labelBase.local_agents_ref" "Template placeholder path not resolved yet: $rel"
     } else {
       Add-Issue "$labelBase.local_agents_ref" "Missing local agents path: $rel"
     }
@@ -304,3 +314,4 @@ Write-Host ""
 if ($Strict -and $issues.Count -gt 0) {
   exit 1
 }
+
