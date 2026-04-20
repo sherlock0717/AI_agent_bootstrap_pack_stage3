@@ -1,0 +1,18 @@
+[
+  {
+    "id": "decision::V1ChainSmoke::gate_1::V1ChainSmoke::20260409040459",
+    "decision_text": "gate_1 -> approved",
+    "authority": "user",
+    "status": "active",
+    "source_ref": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\knowledge\\projects\\V1ChainSmoke\\decisions\\2026-04-09_040459_gate_1_approved.md",
+    "run_ref": "",
+    "advice_ref": "",
+    "decision_type": "gate_1",
+    "target": "V1ChainSmoke",
+    "scope": "project",
+    "kind": "decision",
+    "trust": "unknown",
+    "lifetime": "project_long",
+    "updated_at": "2026-04-09T04:04:59"
+  }
+]

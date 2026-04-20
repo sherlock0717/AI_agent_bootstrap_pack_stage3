@@ -1,0 +1,30 @@
+default_routes:
+  ai_analysis_task:
+    preferred_executor: openclaw
+    fallback_executors:
+      - native_script
+
+  ai_planning_task:
+    preferred_executor: openclaw
+    fallback_executors:
+      - native_script
+
+  ai_generation_task:
+    preferred_executor: native_script
+    fallback_executors:
+      - openclaw
+
+  ai_integration_task:
+    preferred_executor: native_script
+    fallback_executors:
+      - openclaw
+
+  deterministic_scoring:
+    preferred_executor: native_script
+    fallback_executors:
+      - openclaw
+
+  artifact_packaging:
+    preferred_executor: native_script
+    fallback_executors:
+      - openclaw

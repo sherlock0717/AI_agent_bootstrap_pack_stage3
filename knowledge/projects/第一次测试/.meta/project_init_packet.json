@@ -1,0 +1,21 @@
+{
+  "project_id": "第一次测试",
+  "project_type": "unknown",
+  "readiness_level": "unknown",
+  "summary": "init failed: OpenClaw Gateway 可达，但 agent 执行 endpoint 不存在。已尝试：/v1/responses, /api/integration/agent/run",
+  "missing_materials": [
+    {
+      "name": "init",
+      "reason": "client unavailable",
+      "required": true
+    }
+  ],
+  "next_step": "retry",
+  "can_continue": false,
+  "suggested_primary_action": "review",
+  "suggested_secondary_action": "retry",
+  "evidence_refs": [],
+  "status": "init_failed",
+  "created_at": "2026-04-09T05:48:31",
+  "updated_at": "2026-04-09T05:48:31"
+}

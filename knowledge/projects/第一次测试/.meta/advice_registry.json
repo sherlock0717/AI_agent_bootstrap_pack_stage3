@@ -1,0 +1,22 @@
+[
+  {
+    "id": "advice::第一次测试::execution_interpretation::phase_1_task_01::2026-04-09",
+    "advice_text": "可继续执行后续任务或做审核确认。",
+    "status": "candidate",
+    "run_ref": "outputs/runs/第一次测试/run_20260409_060102_phase_1_task_01.json",
+    "source_ref": "run_store",
+    "task_or_target": "phase_1_task_01",
+    "action_type": "execution_interpretation",
+    "meta": {
+      "from": "run_interpreter",
+      "short_summary": "最近一次执行已完成。",
+      "project_meaning": "最近执行已完成，可继续下一步。"
+    },
+    "scope": "project",
+    "kind": "advice",
+    "authority": "runtime",
+    "trust": "unknown",
+    "lifetime": "project_long",
+    "updated_at": "2026-04-09T06:01:03"
+  }
+]

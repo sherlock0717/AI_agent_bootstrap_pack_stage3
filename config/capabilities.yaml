@@ -1,0 +1,43 @@
+capabilities:
+  knowledge:
+    provider: obsidian
+    status: installed
+    runtime_path: D:\AI_Hub\obsidian_vault
+    long_term_notes_path: D:\AI_Hub\obsidian_vault\AI_Hub_Knowledge
+
+  workflow_automation:
+    provider: n8n
+    status: installed
+    local_url: http://localhost:5678
+    runtime_script: D:\AI_Hub\scripts\start_n8n.ps1
+
+  browser_execution:
+    provider: playwright_mcp
+    status: configured
+    browser: msedge
+    output_path: D:\AI_Hub\logs\playwright
+
+  voice:
+    speech_to_text: faster-whisper
+    text_to_speech: edge-tts
+    status: installed
+    root: D:\AI_Hub\voice
+    venv: D:\AI_Hub\voice\.venv
+    smoke_test: D:\AI_Hub\voice\test_whisper.py
+
+  code_understanding:
+    graphify:
+      status: installed
+      venv: D:\AI_Hub\venvs\graphify
+      cli: D:\AI_Hub\venvs\graphify\Scripts\graphify.exe
+      output_path: D:\AI_Hub\outputs\graphify
+    codebase_memory_mcp:
+      status: installed
+      binary: D:\AI_Hub\tools\codebase-memory-mcp\ui_extract\codebase-memory-mcp.exe
+      cli_wrapper: D:\AI_Hub\tools\codebase-memory-mcp\cbm_cli.ps1
+      output_path: D:\AI_Hub\outputs\codebase-memory-mcp
+
+  experiments:
+    mempalace:
+      status: experimental
+      path: D:\AI_Hub\experiments\mempalace

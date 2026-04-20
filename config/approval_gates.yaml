@@ -1,0 +1,49 @@
+version: 1
+
+gates:
+  gate_0:
+    label: 是否立项
+    trigger: 导入分析完成后
+    required_user_confirmation: true
+    output_requirement:
+      - intake_brief
+    pass_rule: 用户确认继续
+    failure_rule: 项目挂起或终止
+
+  gate_1:
+    label: 蓝图确认
+    trigger: workflow_blueprint 生成后
+    required_user_confirmation: true
+    output_requirement:
+      - workflow_blueprint
+      - task_manifest
+    pass_rule: 用户确认工作流与任务清单
+    failure_rule: 返回蓝图修订
+
+  gate_2:
+    label: 关键方案确认
+    trigger: 遇到路线分叉或高风险方案时
+    required_user_confirmation: true
+    output_requirement:
+      - options_summary
+      - recommendation
+    pass_rule: 用户选择路线
+    failure_rule: 继续补充分析
+
+  gate_3:
+    label: AI 审核通过
+    trigger: need_ai_review = true 的任务完成后
+    required_user_confirmation: false
+    output_requirement:
+      - review_result
+    pass_rule: reviewer 返回 pass
+    failure_rule: 返工并记录原因
+
+  gate_4:
+    label: 最终人工签发
+    trigger: 对外发布或最终交付前
+    required_user_confirmation: true
+    output_requirement:
+      - final_deliverable
+    pass_rule: 用户签发
+    failure_rule: 回到修订流程

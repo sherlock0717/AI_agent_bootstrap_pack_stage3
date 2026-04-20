@@ -1,0 +1,22 @@
+{
+  "project_name": "第一次测试",
+  "phase": "planning_briefing",
+  "phase_cn": "规划/简报阶段",
+  "phase_reason_cn": "已有 3 个任务可启动，建议按规划推进。",
+  "allowed_actions": [
+    "refine_plan",
+    "start_ready_tasks"
+  ],
+  "allowed_actions_cn": [
+    "完善规划",
+    "启动已就绪任务"
+  ],
+  "recommended_actions_cn": [
+    "按优先级启动可执行任务并持续复核。"
+  ],
+  "risk_hint_cn": "规划不清晰会导致执行链路抖动。",
+  "project_phase_source": "project_flow_store.compute_project_phase_snapshot",
+  "project_phase_last_changed_at": "2026-04-09T05:57:50",
+  "project_phase_transition_reason_cn": "阶段未变化，保持 规划/简报阶段。",
+  "computed_at": "2026-04-10T03:39:45"
+}

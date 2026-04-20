@@ -1,0 +1,22 @@
+{
+  "project_name": "测试",
+  "phase": "project_materialized",
+  "phase_cn": "项目已落容器",
+  "phase_reason_cn": "项目与任务已落盘，但尚未进入实质推进。",
+  "allowed_actions": [
+    "check_manifest",
+    "run_init_analysis"
+  ],
+  "allowed_actions_cn": [
+    "核对任务清单",
+    "执行初始化分析"
+  ],
+  "recommended_actions_cn": [
+    "确认容器与清单后进入初始化评估。"
+  ],
+  "risk_hint_cn": "容器已建立但初始化判断不足会影响后续质量。",
+  "project_phase_source": "project_flow_store.compute_project_phase_snapshot",
+  "project_phase_last_changed_at": "2026-04-09T16:24:40",
+  "project_phase_transition_reason_cn": "阶段未变化，保持 项目已落容器。",
+  "computed_at": "2026-04-10T23:25:02"
+}

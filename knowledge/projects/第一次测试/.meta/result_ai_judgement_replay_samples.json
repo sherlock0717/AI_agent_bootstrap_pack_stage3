@@ -1,0 +1,31 @@
+[
+  {
+    "run_id": "run_20260409_060102_phase_1_task_01",
+    "task_id": "phase_1_task_01",
+    "task_scene": "execution",
+    "strategy": "execution_feedback_result_judgement",
+    "artifact_ids": "deliverables/phase_1_task_01.md",
+    "rule_overall_cn": "建议优先处理事项并暂以 trace 为主。",
+    "rule_default_artifact": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\phase_1_task_01.md",
+    "rule_knowledge_artifact": "",
+    "rule_focus_artifact": "",
+    "rule_trace_artifact": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\phase_1_task_01.md",
+    "ai_overall_cn": "建议优先处理事项并暂以 trace 为主。",
+    "ai_knowledge_artifact": "",
+    "ai_focus_artifact": "",
+    "ai_trace_artifact": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\phase_1_task_01.md",
+    "final_overall_cn": "建议优先处理事项并暂以 trace 为主。",
+    "final_knowledge_artifact": "",
+    "final_focus_artifact": "",
+    "final_trace_artifact": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\phase_1_task_01.md",
+    "compare_type_cn": "AI不可用等价规则",
+    "fallback_used": true,
+    "fallback_reason_code": "ai_exception",
+    "fallback_reason_cn": "结果侧 AI 建议不可用（OpenClaw Gateway 可达，但 agent 执行 endpoint 不存在。已尝试：/v1/responses, /api/integration/agent/run），已规则兜底。",
+    "result_ai_policy_enabled": true,
+    "result_ai_policy_source_cn": "系统默认",
+    "status_note_cn": "结果侧建议（规则兜底）：knowledge=— ｜ focus=— ｜ trace=phase_1_task_01.md",
+    "project_id": "第一次测试",
+    "updated_at": "2026-04-09T06:01:03"
+  }
+]

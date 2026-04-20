@@ -1,0 +1,17 @@
+{
+  "channel": "manual_web",
+  "scenario": "new_project_first_pass",
+  "project": "DreamEcho",
+  "summary": "请填写一句话结论",
+  "tasks": [
+    {
+      "task_id": "phase_1_task_01",
+      "task_name": "示例：项目目标收敛",
+      "priority": "P0",
+      "description": "一句话说明该任务要完成什么。",
+      "depends_on": [],
+      "suggested_executor": "native_script",
+      "suggested_channel": "deterministic"
+    }
+  ]
+}

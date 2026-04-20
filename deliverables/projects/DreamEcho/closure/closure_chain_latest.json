@@ -1,0 +1,85 @@
+{
+  "schema": "project_closure_chain.v1",
+  "built_at": "2026-04-11T10:59:18Z",
+  "project_name": "DreamEcho",
+  "project_understanding": {
+    "material_coverage_cn": "快照 .md：0 个（采样）；复盘 .md：0 个；项目目录内 .md 采样：1 个；系统交付物目录已有 .md：10 个。",
+    "project_type_judgment_cn": "执行中并进入复盘/迭代窗口的软件项目型",
+    "key_gaps_cn": [
+      "未检测到硬性阻塞；仍需结合闸门与人工目标核对优先级。"
+    ],
+    "primary_goal_cn": "优先启动可执行任务",
+    "signals": {
+      "total_tasks": 3,
+      "done_tasks": 3,
+      "failed_tasks": 0,
+      "waiting_human_tasks": 0,
+      "project_phase": "iteration_review"
+    }
+  },
+  "advancement_strategy": {
+    "first_priority_cn": "优先启动可执行任务",
+    "rationale_cn": "建议先启动：服务边界与接口清单（phase_1_task_01）。",
+    "needed_materials_and_tools_cn": [
+      "外部项目目录下的 task_manifest.yaml 与 Gate 记录（若存在）",
+      "knowledge/projects/{项目}/ 下已沉淀的 .md",
+      "执行中心任务状态与最近一次运行回写",
+      "（可选）Graphify 图谱报告用于架构问答辅助"
+    ],
+    "risks_and_prerequisites_cn": [
+      "跳过复盘会削弱长期项目记忆。",
+      "自动写入仅生成本地交付物，不代替对外系统变更。"
+    ]
+  },
+  "execution_actions": {
+    "auto_executable": [
+      {
+        "id": "write_closure_brief",
+        "label_cn": "生成本地《项目推进简报》与结构化侧链 JSON",
+        "invokes_cn": "本地 Markdown/JSON 写入 deliverables/projects/.../closure/",
+        "user_visible_outcome_cn": "磁盘上出现可打开的 .md 与 closure_chain_latest.json"
+      }
+    ],
+    "confirm_before_execute": [
+      {
+        "id": "execution_center_task",
+        "label_cn": "在执行中心启动/重试具体任务",
+        "invokes_cn": "任务编排与运行器（可能触发脚本或实验性 OpenClaw）",
+        "user_visible_outcome_cn": "任务状态与运行产物更新"
+      },
+      {
+        "id": "promote_to_knowledge",
+        "label_cn": "将快照/来源提升为项目知识文件",
+        "invokes_cn": "知识提升管线（需确认）",
+        "user_visible_outcome_cn": "knowledge/projects 下新增可复用 .md"
+      }
+    ],
+    "suggest_only": [
+      {
+        "id": "openclaw_experimental",
+        "label_cn": "OpenClaw 实验性外部动作",
+        "invokes_cn": "插件网关（稳定性因环境而异）",
+        "user_visible_outcome_cn": "不保证成功；仅作辅助尝试"
+      },
+      {
+        "id": "n8n_workflow",
+        "label_cn": "n8n 编排",
+        "invokes_cn": "未作为主链接入",
+        "user_visible_outcome_cn": "当前仅建议，不自动执行"
+      }
+    ]
+  },
+  "next_step_advice_ref": {
+    "action_type": "start_ready_task",
+    "target_page": "execution"
+  },
+  "snapshot_digest": {
+    "total_tasks": 3,
+    "done_tasks": 3,
+    "gate_decision": "ready_for_execution"
+  },
+  "auto_artifacts": {
+    "brief_md": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\closure\\closure_brief_20260411_105918.md",
+    "chain_json": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\closure\\closure_chain_latest.json"
+  }
+}

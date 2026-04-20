@@ -1,0 +1,95 @@
+version: 1
+
+profiles:
+  default:
+    label: 通用项目导入
+    description: 适用于暂时无法明确归类的新想法、新项目或混合材料输入。
+    intake_focus:
+      - 项目目标
+      - 核心问题
+      - 约束条件
+      - 可自动化部分
+      - 关键人工决策点
+    expected_outputs:
+      - intake_brief
+      - workflow_blueprint
+      - task_manifest
+    automation_candidates:
+      - 资料整理
+      - 初步归纳
+      - 结构化拆解
+      - 批量摘要
+    human_decision_points:
+      - 是否立项
+      - 蓝图是否确认
+      - 路线选择
+      - 最终签发
+
+  game_ip_worldbuilding:
+    label: IP / 世界观项目
+    description: 适用于世界观、角色、内容矩阵、产品路线等项目。
+    intake_focus:
+      - 世界观定位
+      - 受众与媒介形态
+      - 核心差异点
+      - 可扩展内容矩阵
+      - 优先验证方向
+    expected_outputs:
+      - intake_brief
+      - workflow_blueprint
+      - task_manifest
+    automation_candidates:
+      - 竞品整理
+      - 内容结构拆解
+      - 设定草案整理
+      - 产出格式化
+    human_decision_points:
+      - 核心风格方向
+      - 作品载体优先级
+      - 商业化路线
+
+  research_analysis:
+    label: 研究 / 分析项目
+    description: 适用于研究设计、数据解释、报告撰写、文献分析类工作。
+    intake_focus:
+      - 研究问题
+      - 数据或材料类型
+      - 方法路线
+      - 可复用分析流程
+      - 输出形式
+    expected_outputs:
+      - intake_brief
+      - workflow_blueprint
+      - task_manifest
+    automation_candidates:
+      - 摘要提取
+      - 文献梳理
+      - 报告初稿
+      - 表格结构化
+    human_decision_points:
+      - 研究路线
+      - 理论解释
+      - 最终结论
+
+  software_tooling:
+    label: 工具 / 软件项目
+    description: 适用于桌面工具、自动化脚本、内部系统扩展等开发型项目。
+    intake_focus:
+      - 使用场景
+      - 核心功能
+      - 技术边界
+      - 依赖与风险
+      - MVP 范围
+    expected_outputs:
+      - intake_brief
+      - workflow_blueprint
+      - task_manifest
+    automation_candidates:
+      - 需求拆解
+      - 代码骨架
+      - 配置生成
+      - 文档生成
+    human_decision_points:
+      - 技术路线
+      - 架构取舍
+      - 发布标准

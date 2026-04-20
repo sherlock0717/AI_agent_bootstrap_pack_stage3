@@ -1,0 +1,22 @@
+{
+  "project_name": "DreamEcho",
+  "phase": "iteration_review",
+  "phase_cn": "迭代复盘",
+  "phase_reason_cn": "任务已完成，建议进入迭代复盘并准备下一轮。",
+  "allowed_actions": [
+    "review_iteration",
+    "prepare_next_intake"
+  ],
+  "allowed_actions_cn": [
+    "复盘本轮结果",
+    "准备下一轮 intake"
+  ],
+  "recommended_actions_cn": [
+    "复盘后再开启下一轮。"
+  ],
+  "risk_hint_cn": "跳过复盘会削弱长期项目记忆。",
+  "project_phase_source": "project_flow_store.compute_project_phase_snapshot",
+  "project_phase_last_changed_at": "2026-04-11T10:31:44",
+  "project_phase_transition_reason_cn": "阶段未变化，保持 迭代复盘。",
+  "computed_at": "2026-04-12T01:50:54"
+}

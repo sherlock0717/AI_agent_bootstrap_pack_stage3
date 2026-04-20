@@ -1,12 +1,14 @@
+# Register external projects here before using Hub tools against them.
+# Do not copy project source trees into this repository by default.
+
 projects:
   - id: psylens
     name: PsyLens
-    type: pilot_project
-    status: active
-    role: system_validation_subproject
+    status: historical_sample
+    role: stage3_validation_subproject
     repo_mode: external
-    root_path: "C:/Users/22358/Desktop/项目/PsyLens_GitHub_Repo/PsyLens"
-    manifest_path: "projects/PsyLens/project_manifest.yaml"
-    local_agents_path: "projects/PsyLens/AGENTS.local.md"
+    root_path: C:/Users/22358/Desktop/项目/PsyLens_GitHub_Repo/PsyLens
+    manifest_path: projects/PsyLens/project_manifest.yaml
+    local_agents_path: projects/PsyLens/AGENTS.local.md
     notes: >
-      当前作为系统试运行与方法验证子项目，不等同于系统本体。
+      PsyLens is a historical Stage 3 sample project. It is not the default AI Hub project.

@@ -1,24 +1,39 @@
-﻿path_rules:
+path_rules:
+  config:
+    apply_to:
+      - config/**
+    purpose: Hub configuration and remaining Stage 3 routing configs.
+    rule_file: .cursor/rules/40_docs_rule.md
+
   scripts:
     apply_to:
-      - "scripts/**"
-    purpose: "执行脚本、自动化入口、系统动作"
-    rule_file: ".cursor/rules/20_scripts_rule.md"
+      - scripts/**
+    purpose: Deterministic PowerShell and Python entry points.
+    rule_file: .cursor/rules/20_scripts_rule.md
 
   knowledge:
     apply_to:
-      - "knowledge/**"
-    purpose: "长期知识沉淀、会话、决策、项目知识、复盘"
-    rule_file: ".cursor/rules/30_knowledge_rule.md"
+      - knowledge/**
+    purpose: Historical and durable Stage 3 knowledge. New Hub notes should favor the Obsidian vault under D:\AI_Hub.
+    rule_file: .cursor/rules/30_knowledge_rule.md
 
   docs:
     apply_to:
-      - "docs/**"
-    purpose: "稳定说明文档、流程文档、治理文档"
-    rule_file: ".cursor/rules/40_docs_rule.md"
+      - docs/**
+    purpose: Stable explanations, governance, and migration notes.
+    rule_file: .cursor/rules/40_docs_rule.md
 
   projects:
     apply_to:
-      - "projects/**"
-    purpose: "外部项目接入、manifest、local agents、接入说明"
-    rule_file: ".cursor/rules/50_projects_rule.md"
+      - projects/**
+    purpose: External project metadata and onboarding records, not project source code.
+    rule_file: .cursor/rules/50_projects_rule.md
+
+runtime_paths:
+  hub_root: D:\AI_Hub
+  obsidian_vault: D:\AI_Hub\obsidian_vault
+  n8n_data: D:\AI_Hub\n8n
+  voice_root: D:\AI_Hub\voice
+  tools_root: D:\AI_Hub\tools
+  outputs_root: D:\AI_Hub\outputs
+  logs_root: D:\AI_Hub\logs

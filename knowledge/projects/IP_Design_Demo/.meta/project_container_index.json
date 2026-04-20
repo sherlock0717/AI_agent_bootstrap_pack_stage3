@@ -1,0 +1,20 @@
+{
+  "project_name": "IP_Design_Demo",
+  "updated_at": "2026-04-08T10:15:31",
+  "slots": {
+    "execution_trace_count": 25,
+    "last_execution_trace": {
+      "task_id": "governance_sample_task",
+      "run_id": "run_20260408_101530_governance_sample_task",
+      "source": "run_store",
+      "headline": "governance_sample_task / governance_sample_task",
+      "status_text": "waiting_ai_review",
+      "project_meaning": "当前任务暂不满足执行条件。",
+      "need_handle": "建议先处理前置条件",
+      "recommended_action": "先查看任务说明并补齐条件（等待审核结论）。",
+      "short_summary": "等待审核结论",
+      "updated_at": "2026-04-08T10:15:31"
+    }
+  },
+  "status_counts": {}
+}

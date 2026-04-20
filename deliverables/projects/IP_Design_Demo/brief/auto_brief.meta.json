@@ -1,0 +1,8 @@
+{
+  "project_id": "IP_Design_Demo",
+  "backend_requested": "openclaw",
+  "backend_used": "local",
+  "fallback_local": true,
+  "fallback_reason": "OpenClaw 当前未配置项目 Brief 工具，已自动回退到本地生成。",
+  "source_text": "已回退到本地生成"
+}

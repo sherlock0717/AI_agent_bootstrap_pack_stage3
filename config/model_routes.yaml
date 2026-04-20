@@ -1,0 +1,51 @@
+version: 1
+
+providers:
+  deepseek_default:
+    provider: deepseek
+    mode: api
+    model: deepseek-chat
+    usage: 批量、结构化、常规推理任务
+
+  deepseek_reasoner:
+    provider: deepseek
+    mode: api
+    model: deepseek-reasoner
+    usage: 复杂分析、蓝图生成、难题拆解
+
+  gpt_manual:
+    provider: gpt_web
+    mode: manual
+    model: gpt
+    usage: 高价值单点问题、关键决策、策略推敲
+
+  cursor_code:
+    provider: cursor
+    mode: manual
+    model: local_agent
+    usage: 代码实现、重构、调试
+
+task_routes:
+  intake_analysis:
+    default: deepseek_reasoner
+    fallback: deepseek_default
+
+  workflow_blueprint:
+    default: deepseek_reasoner
+    fallback: deepseek_default
+
+  batch_structuring:
+    default: deepseek_default
+    fallback: deepseek_reasoner
+
+  ai_review:
+    default: deepseek_default
+    fallback: deepseek_reasoner
+
+  strategic_decision:
+    default: gpt_manual
+    fallback: deepseek_reasoner
+
+  code_generation:
+    default: cursor_code
+    fallback: gpt_manual

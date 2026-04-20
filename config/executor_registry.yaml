@@ -1,0 +1,120 @@
+executors:
+  - id: native_script
+    label: 本地脚本执行器
+    type: native
+    enabled: true
+    adapter: native_script_connector
+    capability_tags:
+      - local_script
+      - deterministic_task
+      - review_pipeline
+    supports:
+      streaming: false
+      artifact_output: true
+      raw_trace: true
+      task_cancel: false
+    config:
+      run_mode: direct
+
+  - id: openclaw
+    label: OpenClaw
+    type: gateway
+    enabled: true
+    adapter: openclaw_connector
+    capability_tags:
+      - agent_runtime
+      - multi_tool
+      - streaming
+      - interactive_session
+    supports:
+      streaming: true
+      artifact_output: true
+      raw_trace: true
+      task_cancel: true
+    config:
+      preferred_runtime: wsl
+      wsl:
+        enabled: true
+        distro: Ubuntu
+        shell: bash
+      windows_cli:
+        enabled: true
+      transport: websocket
+      endpoint: ws://127.0.0.1:18789
+      timeout_seconds: 120
+      cli_command: openclaw
+      cli_health_args:
+        - --version
+      cli_timeout_seconds: 180
+      cli_expect_json: false
+      cli_json_mode: auto
+      enable_cli_fallback: true
+      gateway_submit_mode: responses
+      gateway_status_paths:
+        - /api/integration/status
+      cli_profiles:
+        - id: wsl_agent_message
+          runtime: wsl
+          command_template:
+            - openclaw
+            - agent
+            - --message
+            - "{prompt}"
+          expect_json: false
+        - id: wsl_run_prompt
+          runtime: wsl
+          command_template:
+            - openclaw
+            - run
+            - --task
+            - "{prompt}"
+          expect_json: false
+        - id: windows_agent_message
+          runtime: windows
+          command_template:
+            - openclaw
+            - agent
+            - --message
+            - "{prompt}"
+          expect_json: false
+        - id: windows_run_prompt
+          runtime: windows
+          command_template:
+            - openclaw
+            - run
+            - --task
+            - "{prompt}"
+          expect_json: false
+
+  - id: cursor
+    label: Cursor Agent
+    type: ide_agent
+    enabled: false
+    adapter: cursor_connector
+    capability_tags:
+      - coding
+      - refactor
+    supports:
+      streaming: false
+      artifact_output: true
+      raw_trace: true
+      task_cancel: false
+    config:
+      transport: placeholder
+
+  - id: claude_code
+    label: Claude Code
+    type: ide_agent
+    enabled: false
+    adapter: claude_code_connector
+    capability_tags:
+      - coding
+      - debug
+      - repo_reasoning
+    supports:
+      streaming: false
+      artifact_output: true
+      raw_trace: true
+      task_cancel: false
+    config:
+      transport: placeholder

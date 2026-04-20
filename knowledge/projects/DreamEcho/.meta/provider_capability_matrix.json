@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "updated_at": "2026-04-09T02:31:47",
+  "providers": {
+    "deepseek_web": {
+      "provider_id": "deepseek_web",
+      "supports_direct_archive_input": false,
+      "supports_direct_document_input": true,
+      "supports_web_session_execution": true,
+      "supports_native_file_upload": false,
+      "requires_login": true,
+      "requires_paid_plan": false,
+      "runtime_login_ready": false,
+      "runtime_plan_ready": true,
+      "preferred_input_mode": "manual_web"
+    },
+    "chatgpt_web": {
+      "provider_id": "chatgpt_web",
+      "supports_direct_archive_input": true,
+      "supports_direct_document_input": true,
+      "supports_web_session_execution": true,
+      "supports_native_file_upload": true,
+      "requires_login": true,
+      "requires_paid_plan": false,
+      "runtime_login_ready": false,
+      "runtime_plan_ready": true,
+      "preferred_input_mode": "native"
+    }
+  }
+}

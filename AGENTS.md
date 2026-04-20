@@ -1,36 +1,39 @@
 # AGENTS.md
 
-## 仓库定位
-这是一个 **AI 工作系统母仓库**，不是单一项目仓库。
+## Repository Positioning
 
-它负责提供：
-- 系统级规则
-- 模型与任务路由
-- 子项目接入规范
-- 技术雷达
-- 健康检查
-- 知识层模板
+This repository is now the versioned configuration and documentation layer for the local AI Hub runtime at `D:\AI_Hub`.
 
-## 当前状态
-- 系统根目录：`C:\Users\22358\Desktop\系统\AI_agent_bootstrap_pack`
-- 当前首个试运行子项目：`PsyLens`
-- PsyLens 只是系统验证子项目，不等同于整个系统
+It is not a single project repository and it is no longer the main runtime directory. The runtime state, installed tools, service data, and generated local reports belong in `D:\AI_Hub`.
 
-## 基本原则
-1. 系统级规则放根目录，项目级规则放子项目目录。
-2. 任何子项目接入前，先登记到 `config/project_registry.yaml`。
-3. 可脚本化任务尽量脚本化，不长期停留在聊天里。
-4. 不把某个子项目的临时约束写成整个系统的长期规则。
-5. 所有新自动化必须说明输入、输出、失败处理与日志位置。
+## Current Hub Runtime
 
-## 当前优先级
-- 第一优先：把系统母仓库结构固定下来
-- 第二优先：建立子项目注册与接入机制
-- 第三优先：补 tech scout 与 health check
-- 第四优先：再扩更多 agent 能力
+- Hub root: `D:\AI_Hub`
+- Knowledge layer: `D:\AI_Hub\obsidian_vault`
+- Workflow layer: n8n at `http://localhost:5678`
+- Browser execution: Playwright MCP with logs under `D:\AI_Hub\logs\playwright`
+- Voice layer: `D:\AI_Hub\voice`
+- Code understanding: Graphify and codebase-memory-mcp under `D:\AI_Hub\tools` and `D:\AI_Hub\venvs`
 
-## 禁止事项
-- 不要把系统根仓库继续写成单项目仓库
-- 不要让单一子项目污染整个系统规则
-- 不要把 API key、cookie、账号信息写入仓库
-- 不要在没有登记的情况下直接接入新子项目
+## Basic Principles
+
+1. Keep real project source code outside both this repository and `D:\AI_Hub` unless it is an explicit experiment.
+2. Register external projects in `config/project_registry.yaml` before running Hub tooling against them.
+3. Put temporary generated artifacts in `outputs/` or the Hub runtime `outputs/` directory.
+4. Put durable Hub decisions and notes into the Obsidian vault.
+5. Do not store API keys, cookies, account data, or private credentials in this repository.
+6. New automation must state its input, output, failure behavior, and log/report location.
+
+## Current Priorities
+
+- First priority: stabilize the AI Hub runtime interface around `D:\AI_Hub`.
+- Second priority: keep config and docs synchronized with the runtime.
+- Third priority: register real external projects cleanly.
+- Fourth priority: only promote old Stage 3 workflows after repeated real use.
+
+## Do Not
+
+- Do not turn this repository back into a single-project workspace.
+- Do not let PsyLens, DreamEcho, or any other project define global Hub rules.
+- Do not copy external project source trees into this repository by default.
+- Do not overwrite existing project deliverables or historical notes during Hub migration.

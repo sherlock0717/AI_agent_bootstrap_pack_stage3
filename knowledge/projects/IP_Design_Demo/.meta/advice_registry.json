@@ -1,0 +1,44 @@
+[
+  {
+    "id": "advice::IP_Design_Demo::execution_interpretation::governance_sample_task::2026-04-08",
+    "advice_text": "先查看任务说明并补齐条件（等待审核结论）。",
+    "status": "candidate",
+    "run_ref": "outputs/runs/IP_Design_Demo/run_20260408_101530_governance_sample_task.json",
+    "source_ref": "run_store",
+    "task_or_target": "governance_sample_task",
+    "action_type": "execution_interpretation",
+    "meta": {
+      "from": "run_interpreter",
+      "short_summary": "等待审核结论",
+      "project_meaning": "当前任务暂不满足执行条件。"
+    },
+    "scope": "project",
+    "kind": "advice",
+    "authority": "runtime",
+    "trust": "unknown",
+    "lifetime": "project_long",
+    "updated_at": "2026-04-08T10:15:31",
+    "decision_ref": "decision::IP_Design_Demo::advice_accept::governance_sample_task::20260408025459"
+  },
+  {
+    "id": "advice::IP_Design_Demo::execution_interpretation::governance_e2e_task::2026-04-08",
+    "advice_text": "先查看失败原因，再决定重试或改方案。",
+    "status": "candidate",
+    "run_ref": "outputs/runs/IP_Design_Demo/run_20260408_100407_governance_e2e_task.json",
+    "source_ref": "run_store",
+    "task_or_target": "governance_e2e_task",
+    "action_type": "execution_interpretation",
+    "meta": {
+      "from": "run_interpreter",
+      "short_summary": "generate auto brief via openclaw failed: OpenClaw 工具调用不可用。",
+      "project_meaning": "最近执行失败，当前任务推进可能受阻。"
+    },
+    "scope": "project",
+    "kind": "advice",
+    "authority": "runtime",
+    "trust": "unknown",
+    "lifetime": "project_long",
+    "updated_at": "2026-04-08T10:04:07",
+    "decision_ref": "decision::IP_Design_Demo::advice_accept::governance_e2e_task::20260408035356"
+  }
+]

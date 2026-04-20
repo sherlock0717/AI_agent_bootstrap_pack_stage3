@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "project_id": "DreamEcho",
+  "updated_at": "2026-04-09T02:31:47",
+  "items": [
+    {
+      "capability_id": "provider_matrix.deepseek_web.web_interaction_task",
+      "radar_status": "suggest_observe",
+      "reason_cn": "记录 provider 输入能力与运行态，供人工更新路由策略。 当前决策=native，状态=login_required。",
+      "evidence_refs": [
+        "provider_capability_matrix.json",
+        "latest_web_agent_debug.json"
+      ],
+      "suggested_route": "native",
+      "risk_level": "medium",
+      "human_review_required": true,
+      "updated_at": "2026-04-09T02:31:47"
+    }
+  ]
+}

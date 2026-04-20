@@ -1,0 +1,20 @@
+{
+  "fallback_policy": "allow_fallback",
+  "health_probe_tool": "sessions_list",
+  "capabilities": {
+    "generate_project_brief": {
+      "openclaw_tool_name": "generate_project_brief",
+      "enabled": true,
+      "allow_frontend": true,
+      "allow_fallback": true,
+      "label_cn": "项目简报生成"
+    },
+    "init_project_scan": {
+      "openclaw_tool_name": "init_project_scan",
+      "enabled": true,
+      "allow_frontend": true,
+      "allow_fallback": true,
+      "label_cn": "项目初始化分析"
+    }
+  }
+}

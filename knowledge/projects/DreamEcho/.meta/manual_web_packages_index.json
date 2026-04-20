@@ -1,0 +1,722 @@
+[
+  {
+    "created_at": "2026-04-08T22:34:07",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_223407",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_223407\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_223407\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_223407\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-08T22:34:09",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_223409",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_223409\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_223409\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_223409\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-08T22:34:14",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_223414",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_223414\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_223414\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_223414\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-08T22:40:20",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224020",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224020\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224020\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224020\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-08T22:40:55",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224055",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224055\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224055\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224055\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-08T22:43:51",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224351",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224351\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224351\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224351\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-08T22:46:36",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224636",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224636\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224636\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_224636\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-08T22:51:18",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_225118",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_225118\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_225118\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_225118\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-08T22:51:26",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_225126",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_225126\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_225126\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_225126\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-08T23:56:31",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_235631",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_235631\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_235631\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260408_235631\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T00:37:24",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_003724",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_003724\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_003724\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_003724\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T00:47:52",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_004752",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_004752\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_004752\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_004752\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T00:48:14",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_004814",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_004814\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_004814\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_004814\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T00:48:55",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_004855",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_004855\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_004855\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_004855\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T00:50:28",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_005028",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_005028\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_005028\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_005028\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T01:00:24",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_010024",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_010024\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_010024\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_010024\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T01:02:46",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_010246",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_010246\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_010246\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_010246\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T01:03:40",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_010340",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_010340\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_010340\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_010340\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T01:27:15",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_012715",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_012715\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_012715\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_012715\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T01:30:26",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_013026",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_013026\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_013026\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_013026\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T01:36:32",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_013632",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_013632\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_013632\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_013632\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T01:40:14",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_014014",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_014014\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_014014\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_014014\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T01:49:22",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_014922",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_014922\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_014922\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_014922\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T01:52:29",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_015229",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_015229\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_015229\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_015229\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T02:02:46",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_020246",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_020246\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_020246\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_020246\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T02:05:03",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_020503",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_020503\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_020503\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_020503\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T02:10:42",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_021042",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_021042\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_021042\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_021042\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T02:14:58",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_021458",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_021458\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_021458\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_021458\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T02:28:04",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_022804",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_022804\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_022804\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_022804\\result_template.json"
+  },
+  {
+    "created_at": "2026-04-09T02:31:47",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_023147",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_023147\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_023147\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\DreamEcho\\manual_web_packages\\20260409_023147\\result_template.json"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "decision::第一次测试::gate_1::第一次测试::20260409055750",
+    "decision_text": "gate_1 -> ready_for_execution",
+    "authority": "user",
+    "status": "active",
+    "source_ref": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\knowledge\\projects\\第一次测试\\decisions\\2026-04-09_055750_gate_1_ready_for_execution.md",
+    "run_ref": "",
+    "advice_ref": "",
+    "decision_type": "gate_1",
+    "target": "第一次测试",
+    "scope": "project",
+    "kind": "decision",
+    "trust": "unknown",
+    "lifetime": "project_long",
+    "updated_at": "2026-04-09T05:57:50"
+  }
+]

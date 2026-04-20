@@ -1,0 +1,14 @@
+{
+  "project_name": "测试",
+  "updated_at": "2026-04-09T16:18:14",
+  "slots": {
+    "latest_intake_brief": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\测试\\brief\\intake_brief.md",
+    "latest_workflow_blueprint": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\测试\\plan\\workflow_blueprint.md",
+    "latest_task_manifest": "C:\\Users\\22358\\Desktop\\项目\\测试\\task_manifest.yaml",
+    "task_split_mode": "light",
+    "task_split_mode_reason_cn": "纯文字短输入默认轻项目模式（1~2 条任务优先）。"
+  },
+  "status_counts": {
+    "intake_ready": 1
+  }
+}

@@ -1,0 +1,445 @@
+{
+  "version": 1,
+  "updated_at": "2026-04-08T22:01:50",
+  "capabilities": [
+    {
+      "capability_id": "project_import_registration",
+      "capability_name": "项目导入与注册",
+      "business_goal": "把输入材料转成系统可持续推进的项目容器",
+      "layer": "fact_layer",
+      "default_route": "deterministic",
+      "allowed_routes": [
+        "deterministic"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": false,
+      "fact_layer_touch": true,
+      "human_review_required": true,
+      "fallback_route": "deterministic",
+      "current_status": "implemented",
+      "next_action": "保持规则主链，不交给插件落盘",
+      "implementation_mode": "must_self_build",
+      "route_reason_cn": "涉及项目容器与事实写入，必须可审计且可回退。"
+    },
+    {
+      "capability_id": "zip_scan_index",
+      "capability_name": "zip 扫描与索引",
+      "business_goal": "从压缩包提取结构线索供初始化判断",
+      "layer": "tooling_layer",
+      "default_route": "deterministic",
+      "allowed_routes": [
+        "deterministic",
+        "openclaw_proxy"
+      ],
+      "plugin_first_source": true,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": false,
+      "fallback_route": "deterministic",
+      "current_status": "implemented",
+      "next_action": "可继续薄包装现有扫描器",
+      "implementation_mode": "thin_wrapper_first",
+      "route_reason_cn": "工具型能力优先包装，保留本地兜底。"
+    },
+    {
+      "capability_id": "new_project_first_pass_decompose",
+      "capability_name": "新项目首轮拆解",
+      "business_goal": "输出可执行的首轮任务候选",
+      "layer": "judgement_layer",
+      "default_route": "web_agent",
+      "allowed_routes": [
+        "web_agent",
+        "manual_web",
+        "api"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": true,
+      "fallback_route": "manual_web",
+      "current_status": "implemented",
+      "next_action": "优先 web_agent，失败回退 manual_web",
+      "implementation_mode": "thin_wrapper_first",
+      "route_reason_cn": "高认知低频任务，适合网页协作并保留人工把关。"
+    },
+    {
+      "capability_id": "manifest_import_validate",
+      "capability_name": "任务清单导入与校验",
+      "business_goal": "将外部结果安全转为可执行任务清单",
+      "layer": "fact_layer",
+      "default_route": "deterministic",
+      "allowed_routes": [
+        "deterministic"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": false,
+      "fact_layer_touch": true,
+      "human_review_required": true,
+      "fallback_route": "deterministic",
+      "current_status": "implemented",
+      "next_action": "继续保持候选先行+确认写入",
+      "implementation_mode": "must_self_build",
+      "route_reason_cn": "落盘前校验必须在规则层完成。"
+    },
+    {
+      "capability_id": "brief_generation",
+      "capability_name": "项目简报生成",
+      "business_goal": "为项目提供可复用的阶段性总览",
+      "layer": "judgement_layer",
+      "default_route": "api",
+      "allowed_routes": [
+        "api",
+        "deterministic",
+        "openclaw_proxy"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": false,
+      "fallback_route": "deterministic",
+      "current_status": "implemented",
+      "next_action": "继续稳定 API+本地回退路径",
+      "implementation_mode": "thin_wrapper_first",
+      "route_reason_cn": "内容生成可用模型通道，但要有本地兜底。"
+    },
+    {
+      "capability_id": "init_analysis",
+      "capability_name": "初始化分析",
+      "business_goal": "输出项目 readiness 与缺失材料判断",
+      "layer": "judgement_layer",
+      "default_route": "api",
+      "allowed_routes": [
+        "api",
+        "deterministic",
+        "openclaw_proxy"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": true,
+      "fallback_route": "deterministic",
+      "current_status": "implemented",
+      "next_action": "保持结构化输出与失败兜底",
+      "implementation_mode": "thin_wrapper_first",
+      "route_reason_cn": "判断层可 AI 增强，但状态写入仍规则控制。"
+    },
+    {
+      "capability_id": "execution_input_assembly",
+      "capability_name": "执行前输入装配",
+      "business_goal": "按场景把项目对象装配为可解释输入",
+      "layer": "orchestration_layer",
+      "default_route": "deterministic",
+      "allowed_routes": [
+        "deterministic"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": false,
+      "fact_layer_touch": false,
+      "human_review_required": false,
+      "fallback_route": "deterministic",
+      "current_status": "implemented",
+      "next_action": "继续统一入口，避免页面分散推理",
+      "implementation_mode": "must_self_build",
+      "route_reason_cn": "主链编排逻辑必须可控且可追溯。"
+    },
+    {
+      "capability_id": "input_ai_object_pick",
+      "capability_name": "输入侧 AI 对象择取建议",
+      "business_goal": "在允许池中给出更优对象建议",
+      "layer": "judgement_layer",
+      "default_route": "api",
+      "allowed_routes": [
+        "api",
+        "deterministic"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": false,
+      "fallback_route": "deterministic",
+      "current_status": "implemented",
+      "next_action": "继续评估对照，不自动改规则",
+      "implementation_mode": "thin_wrapper_first",
+      "route_reason_cn": "仅建议层，规则层裁决。"
+    },
+    {
+      "capability_id": "result_ai_judgement",
+      "capability_name": "结果侧 AI 判断建议",
+      "business_goal": "对执行结果给出 knowledge/focus/trace 倾向建议",
+      "layer": "judgement_layer",
+      "default_route": "api",
+      "allowed_routes": [
+        "api",
+        "deterministic"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": true,
+      "fallback_route": "deterministic",
+      "current_status": "implemented",
+      "next_action": "保持建议层，不自动生效",
+      "implementation_mode": "thin_wrapper_first",
+      "route_reason_cn": "结果价值判断需要 AI，但落盘仍人工触发。"
+    },
+    {
+      "capability_id": "artifact_prefer_preselect",
+      "capability_name": "多 artifact 初步择优",
+      "business_goal": "在同 run 内给出首选 artifact 建议",
+      "layer": "judgement_layer",
+      "default_route": "api",
+      "allowed_routes": [
+        "api",
+        "deterministic"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": false,
+      "fallback_route": "deterministic",
+      "current_status": "implemented",
+      "next_action": "保持建议而非自动替换采纳目标",
+      "implementation_mode": "thin_wrapper_first",
+      "route_reason_cn": "提高建议质量，不改事实层。"
+    },
+    {
+      "capability_id": "artifact_final_human_arbitration",
+      "capability_name": "多 artifact 最终人工仲裁",
+      "business_goal": "在关键结果上保留人工最终裁定权",
+      "layer": "governance_layer",
+      "default_route": "manual_web",
+      "allowed_routes": [
+        "manual_web",
+        "web_agent"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": true,
+      "fact_layer_touch": true,
+      "human_review_required": true,
+      "fallback_route": "manual_web",
+      "current_status": "implemented",
+      "next_action": "保持人工确认后再写事实层",
+      "implementation_mode": "must_self_build",
+      "route_reason_cn": "最终仲裁必须人工复核并可追溯。"
+    },
+    {
+      "capability_id": "source_to_knowledge_digest_candidate",
+      "capability_name": "source/evidence → knowledge 摘要候选",
+      "business_goal": "产出可沉淀知识候选而非直接落盘",
+      "layer": "judgement_layer",
+      "default_route": "manual_web",
+      "allowed_routes": [
+        "manual_web",
+        "web_agent",
+        "api"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": true,
+      "fallback_route": "api",
+      "current_status": "planned",
+      "next_action": "先走候选链，不直接写知识文件",
+      "implementation_mode": "thin_wrapper_first",
+      "route_reason_cn": "高质量摘要需要人工把关。"
+    },
+    {
+      "capability_id": "feedback_to_advice_candidate",
+      "capability_name": "feedback → 建议候选",
+      "business_goal": "将执行反馈转成可处理建议候选",
+      "layer": "orchestration_layer",
+      "default_route": "deterministic",
+      "allowed_routes": [
+        "deterministic",
+        "api"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": false,
+      "fact_layer_touch": false,
+      "human_review_required": false,
+      "fallback_route": "deterministic",
+      "current_status": "implemented",
+      "next_action": "继续保持解释优先与最小噪音写入",
+      "implementation_mode": "must_self_build",
+      "route_reason_cn": "建议候选生成依赖主链规则与状态。"
+    },
+    {
+      "capability_id": "user_adoption_effective_apply",
+      "capability_name": "用户采纳生效",
+      "business_goal": "将用户采纳动作安全写入事实层",
+      "layer": "fact_layer",
+      "default_route": "deterministic",
+      "allowed_routes": [
+        "deterministic"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": false,
+      "fact_layer_touch": true,
+      "human_review_required": true,
+      "fallback_route": "deterministic",
+      "current_status": "implemented",
+      "next_action": "保持 run→artifact→动作→结果 物证链",
+      "implementation_mode": "must_self_build",
+      "route_reason_cn": "事实状态流转不可外包给插件。"
+    },
+    {
+      "capability_id": "bidirectional_validation",
+      "capability_name": "双向校验",
+      "business_goal": "核对 metadata 与磁盘真实状态一致性",
+      "layer": "governance_layer",
+      "default_route": "deterministic",
+      "allowed_routes": [
+        "deterministic"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": false,
+      "fact_layer_touch": false,
+      "human_review_required": false,
+      "fallback_route": "deterministic",
+      "current_status": "implemented",
+      "next_action": "继续诚实提示，不自动偷偷修复",
+      "implementation_mode": "must_self_build",
+      "route_reason_cn": "可信性基础能力，必须本地可审计。"
+    },
+    {
+      "capability_id": "light_timeline",
+      "capability_name": "轻时间线",
+      "business_goal": "回看近期关键动作，提升可解释性",
+      "layer": "governance_layer",
+      "default_route": "deterministic",
+      "allowed_routes": [
+        "deterministic"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": false,
+      "fact_layer_touch": false,
+      "human_review_required": false,
+      "fallback_route": "deterministic",
+      "current_status": "implemented",
+      "next_action": "维持轻量，不扩成审计中心",
+      "implementation_mode": "must_self_build",
+      "route_reason_cn": "项目记忆回看基础能力。"
+    },
+    {
+      "capability_id": "manual_web_task_package_generate",
+      "capability_name": "网页协作任务包生成",
+      "business_goal": "将网页协作输入标准化为可执行任务包",
+      "layer": "orchestration_layer",
+      "default_route": "manual_web",
+      "allowed_routes": [
+        "manual_web",
+        "web_agent"
+      ],
+      "plugin_first_source": false,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": false,
+      "fallback_route": "manual_web",
+      "current_status": "implemented",
+      "next_action": "继续复用模板与 schema",
+      "implementation_mode": "thin_wrapper_first",
+      "route_reason_cn": "桥接网页协作与系统导入链。"
+    },
+    {
+      "capability_id": "web_agent_execute",
+      "capability_name": "网页代理执行",
+      "business_goal": "自动提交网页任务并回收结果",
+      "layer": "proxy_layer",
+      "default_route": "web_agent",
+      "allowed_routes": [
+        "web_agent",
+        "manual_web"
+      ],
+      "plugin_first_source": true,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": true,
+      "fallback_route": "manual_web",
+      "current_status": "implemented",
+      "next_action": "稳定登录态与失败回退提示",
+      "implementation_mode": "plugin_first",
+      "route_reason_cn": "优先利用代理能力，系统负责校验导入。"
+    },
+    {
+      "capability_id": "browser_proxy",
+      "capability_name": "browser 代理",
+      "business_goal": "为网页任务提供受控浏览器动作能力",
+      "layer": "proxy_layer",
+      "default_route": "openclaw_proxy",
+      "allowed_routes": [
+        "openclaw_proxy",
+        "web_agent"
+      ],
+      "plugin_first_source": true,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": false,
+      "fallback_route": "manual_web",
+      "current_status": "partial",
+      "next_action": "继续插件优先，不在 UI 层硬编码自动化",
+      "implementation_mode": "plugin_first",
+      "route_reason_cn": "典型工具层代理能力，应优先插件化。"
+    },
+    {
+      "capability_id": "coding_harness_proxy",
+      "capability_name": "coding harness 代理",
+      "business_goal": "把编码执行能力纳入受控代理总线",
+      "layer": "proxy_layer",
+      "default_route": "openclaw_proxy",
+      "allowed_routes": [
+        "openclaw_proxy",
+        "deterministic"
+      ],
+      "plugin_first_source": true,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": true,
+      "fallback_route": "deterministic",
+      "current_status": "planned",
+      "next_action": "先做最小接线，不扩大代理权限",
+      "implementation_mode": "plugin_first",
+      "route_reason_cn": "代理能力优先插件化并可审计。"
+    },
+    {
+      "capability_id": "skills_bundles_hooks_mcp_wiring",
+      "capability_name": "skills/bundles/hooks/MCP 接线",
+      "business_goal": "把外部能力接入系统总线并受治理",
+      "layer": "integration_layer",
+      "default_route": "openclaw_proxy",
+      "allowed_routes": [
+        "openclaw_proxy",
+        "deterministic"
+      ],
+      "plugin_first_source": true,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": true,
+      "fallback_route": "deterministic",
+      "current_status": "partial",
+      "next_action": "优先接线治理，不直接接管事实层",
+      "implementation_mode": "plugin_first",
+      "route_reason_cn": "接线类能力应优先复用既有插件生态。"
+    },
+    {
+      "capability_id": "search_fetch_external_info",
+      "capability_name": "搜索/fetch/web 外部信息获取",
+      "business_goal": "补充外部实时信息作为参考输入",
+      "layer": "tooling_layer",
+      "default_route": "openclaw_proxy",
+      "allowed_routes": [
+        "openclaw_proxy",
+        "api",
+        "manual_web"
+      ],
+      "plugin_first_source": true,
+      "wrapper_needed": true,
+      "fact_layer_touch": false,
+      "human_review_required": true,
+      "fallback_route": "manual_web",
+      "current_status": "implemented",
+      "next_action": "继续限定为参考输入，不直接写事实层",
+      "implementation_mode": "plugin_first",
+      "route_reason_cn": "外部信息源波动大，需受控接入并人工复核。"
+    }
+  ]
+}

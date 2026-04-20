@@ -1,4 +1,6 @@
-﻿workspace_paths:
-  system_root: "C:/Users/22358/Desktop/系统/AI_agent_bootstrap_pack_stage3"
-  external_projects_root: "C:/Users/22358/Desktop/项目"
-  sample_registered_project: "PsyLens"
+workspace_paths:
+  hub_runtime_root: D:/AI_Hub
+  config_repository_root: C:/Users/22358/Desktop/系统/AI_agent_bootstrap_pack_stage3
+  external_projects_root: C:/Users/22358/Desktop/项目
+  sample_registered_project: PsyLens
+  sample_status: historical_sample

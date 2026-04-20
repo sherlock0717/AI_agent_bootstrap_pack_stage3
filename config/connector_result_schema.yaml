@@ -1,0 +1,25 @@
+required_fields:
+  - task_id
+  - executor
+  - status
+  - started_at
+  - summary
+
+optional_fields:
+  - finished_at
+  - artifacts
+  - raw_trace_path
+  - review_hint
+  - error_message
+  - output_preview
+  - metrics
+  - external_session_id
+  - external_run_id
+
+status_enum:
+  - queued
+  - running
+  - completed
+  - failed
+  - cancelled
+  - needs_human

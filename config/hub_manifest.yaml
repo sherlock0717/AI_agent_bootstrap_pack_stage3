@@ -1,0 +1,35 @@
+hub:
+  id: ai_hub_local_runtime
+  name: AI Hub Local Runtime
+  runtime_root: D:\AI_Hub
+  config_repository: C:\Users\22358\Desktop\系统\AI_agent_bootstrap_pack_stage3
+  timezone: Asia/Shanghai
+  role: local_ai_capability_hub
+
+boundaries:
+  runtime_owns:
+    - installed tools
+    - virtual environments
+    - Obsidian vault files
+    - n8n local data
+    - Playwright logs
+    - voice environment
+    - local generated outputs
+    - backups before external tool writes
+  repository_owns:
+    - versioned configuration
+    - stable documentation
+    - migration notes
+    - lightweight Hub entry scripts
+    - historical Stage 3 workflows
+  external_projects_own:
+    - project source code
+    - project-specific rules
+    - project deliverables
+    - project secrets
+
+principles:
+  - Keep runtime state in D:\AI_Hub.
+  - Keep real projects outside the Hub unless explicitly experimental.
+  - Register projects before using Hub tooling against them.
+  - Preserve historical Stage 3 content unless cleanup is explicitly requested.

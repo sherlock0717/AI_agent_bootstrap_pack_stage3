@@ -1,0 +1,22 @@
+{
+  "project_name": "AI_System_Console_Starter",
+  "phase": "intake_pending",
+  "phase_cn": "资料待接入",
+  "phase_reason_cn": "当前尚未形成任务清单，项目仍在 intake 前置阶段。",
+  "allowed_actions": [
+    "collect_materials",
+    "run_intake"
+  ],
+  "allowed_actions_cn": [
+    "补充项目资料",
+    "执行导入与立项检查"
+  ],
+  "recommended_actions_cn": [
+    "先补齐基础资料并触发 intake。"
+  ],
+  "risk_hint_cn": "资料缺失会导致后续判断偏差。",
+  "project_phase_source": "project_flow_store.compute_project_phase_snapshot",
+  "project_phase_last_changed_at": "2026-04-09T04:42:48",
+  "project_phase_transition_reason_cn": "阶段未变化，保持 资料待接入。",
+  "computed_at": "2026-04-10T22:48:28"
+}

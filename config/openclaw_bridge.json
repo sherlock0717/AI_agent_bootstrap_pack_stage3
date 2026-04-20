@@ -1,0 +1,17 @@
+{
+  "base_url": "http://127.0.0.1:18789",
+  "auth_token": "3456b81f55bbac113b3e645d94dd6bb24bcdd0f8a1301035",
+  "default_model": "openclaw/default",
+  "enabled": true,
+  "timeout": 30,
+  "allow_tool_invocation": true,
+  "allow_agent_tasks": true,
+  "allow_config_patch": false,
+  "web_agent_fallback_mode": "openclaw_browser_cli",
+  "openclaw_cli_command": "openclaw",
+  "openclaw_browser_profile": "remote",
+  "agent_run_paths": [
+    "/v1/responses",
+    "/api/integration/agent/run"
+  ]
+}

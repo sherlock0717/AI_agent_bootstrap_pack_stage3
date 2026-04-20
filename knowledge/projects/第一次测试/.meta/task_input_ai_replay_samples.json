@@ -1,0 +1,28 @@
+[
+  {
+    "scene": "init",
+    "task_action": "analyze_project",
+    "task_label": "init_analysis",
+    "strategy": "init_sources_state_focus",
+    "allowed_pool_ids": "reuse_hint",
+    "allowed_pool_ai_ids": "reuse_hint",
+    "allowed_pool_all_ids": "project_status,focus_summary,reuse_hint,recent_deliverable",
+    "required_ids": "project_status,focus_summary,reuse_hint",
+    "ai_raw_recommended_ids": "",
+    "ai_recommended_ids": "reuse_hint",
+    "final_adopted_ids": "project_status,focus_summary,reuse_hint",
+    "ai_dropped_ids": "",
+    "rule_only_ids": "project_status,focus_summary,reuse_hint",
+    "rule_only_categories_cn": "项目状态摘要、本期焦点摘要、知识复用提示",
+    "fallback_used": true,
+    "fallback_reason_code": "ai_exception",
+    "fallback_reason_cn": "AI 建议不可用（OpenClaw Gateway 可达，但 agent 执行 endpoint 不存在。已尝试：/v1/responses, /api/integration/agent/run），已规则兜底。",
+    "diff_type_cn": "AI不可用等价规则",
+    "compare_type_cn": "AI不可用等价规则",
+    "ai_policy_source_cn": "系统默认",
+    "ai_policy_enabled": "true",
+    "status_note_cn": "场景：init_analysis（初始化任务）｜策略：init_sources_state_focus；AI 推荐：知识复用提示；最终采用：项目状态摘要、本期焦点摘要、知识复用提示。",
+    "project_id": "第一次测试",
+    "updated_at": "2026-04-09T05:48:31"
+  }
+]

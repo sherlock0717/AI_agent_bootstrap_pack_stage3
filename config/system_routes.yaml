@@ -1,45 +1,53 @@
-﻿daily_routes:
-  start_day:
-    - "run_system_check.ps1"
-    - "review knowledge/decisions/_index.md"
-    - "start_system_session.ps1"
+hub_routes:
+  check_hub:
+    - scripts/check_hub.ps1
+    - D:\AI_Hub\scripts\check_hub.ps1
 
-  start_project_work:
-    - "route_task.ps1"
-    - "start_project_session.ps1"
-    - "check project notes if needed"
+  start_hub:
+    - scripts/start_hub.ps1
+    - D:\AI_Hub\scripts\start_hub.ps1
 
-  close_day:
-    - "new_decision_note.ps1 when major decisions exist"
-    - "refresh_knowledge_indexes.ps1"
-    - "review outputs and logs"
+  start_n8n:
+    - D:\AI_Hub\scripts\start_n8n.ps1
+
+  open_voice:
+    - D:\AI_Hub\scripts\open_voice_env.ps1
+
+  register_project:
+    - config/project_registry.yaml
+    - scripts/register_external_project.ps1
 
 standard_entrypoints:
-  system_health: "scripts/run_system_check.ps1"
-  system_session: "scripts/start_system_session.ps1"
-  decision_note: "scripts/new_decision_note.ps1"
-  system_note: "scripts/new_system_note.ps1"
-  project_note: "scripts/new_project_note.ps1"
-  scout_manual: "scripts/run_scout_manual.ps1"
-  knowledge_refresh: "scripts/refresh_knowledge_indexes.ps1"
-  project_registration: "scripts/register_external_project.ps1"
-  task_routing: "scripts/route_task.ps1"
-  project_session: "scripts/start_project_session.ps1"
-  project_work_start: "scripts/start_project_work.ps1"
-  maintenance_cycle: "scripts/run_maintenance_cycle.ps1"
-  daily_start: "scripts/start_day.ps1"
-  daily_close: "scripts/close_day.ps1"
-  publish_snapshot: "scripts/publish_snapshot.ps1"
-  preflight_check: "scripts/preflight_check.ps1"
-  weekly_maintenance_cycle: "scripts/weekly_maintenance_cycle.ps1"
-  deliverable_init: "scripts/init_project_deliverables.ps1"
-  deliverable_new: "scripts/new_deliverable.ps1"
-  deliverable_list: "scripts/list_project_deliverables.ps1"
-  project_review_cycle: "scripts/project_review_cycle.ps1"
-  project_lifecycle_bootstrap: "scripts/project_lifecycle_bootstrap.ps1"
-  project_status_snapshot: "scripts/project_status_snapshot.ps1"
-  project_ops: "scripts/project_ops.ps1"
-  system_release_snapshot: "scripts/system_release_snapshot.ps1"
-  workspace_project_bootstrap: "scripts/create_project_in_workspace.ps1"
-  v1_freeze_guide: "docs/system/v1_freeze_guide.md"
+  hub_health: scripts/check_hub.ps1
+  hub_start: scripts/start_hub.ps1
+  runtime_health: D:\AI_Hub\scripts\check_hub.ps1
+  runtime_start: D:\AI_Hub\scripts\start_hub.ps1
+  project_registration: scripts/register_external_project.ps1
+  project_registry: config/project_registry.yaml
+  system_note: scripts/new_system_note.ps1
+  project_note: scripts/new_project_note.ps1
 
+legacy_stage3_entrypoints:
+  system_health: scripts/run_system_check.ps1
+  system_session: scripts/start_system_session.ps1
+  decision_note: scripts/new_decision_note.ps1
+  scout_manual: scripts/run_scout_manual.ps1
+  knowledge_refresh: scripts/refresh_knowledge_indexes.ps1
+  task_routing: scripts/route_task.ps1
+  project_session: scripts/start_project_session.ps1
+  project_work_start: scripts/start_project_work.ps1
+  maintenance_cycle: scripts/run_maintenance_cycle.ps1
+  daily_start: scripts/start_day.ps1
+  daily_close: scripts/close_day.ps1
+  publish_snapshot: scripts/publish_snapshot.ps1
+  preflight_check: scripts/preflight_check.ps1
+  weekly_maintenance_cycle: scripts/weekly_maintenance_cycle.ps1
+  deliverable_init: scripts/init_project_deliverables.ps1
+  deliverable_new: scripts/new_deliverable.ps1
+  deliverable_list: scripts/list_project_deliverables.ps1
+  project_review_cycle: scripts/project_review_cycle.ps1
+  project_lifecycle_bootstrap: scripts/project_lifecycle_bootstrap.ps1
+  project_status_snapshot: scripts/project_status_snapshot.ps1
+  project_ops: scripts/project_ops.ps1
+  system_release_snapshot: scripts/system_release_snapshot.ps1
+  workspace_project_bootstrap: scripts/create_project_in_workspace.ps1

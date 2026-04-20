@@ -1,31 +1,33 @@
-﻿@AGENTS.md
+@AGENTS.md
 
 # Claude Entry
 
-## 系统定位
-这是一个长期可复用的 AI 工作系统母仓库，不是单一项目代码仓库。
+## System Positioning
 
-## 你现在应优先理解的内容
-- 系统规则总入口：AGENTS.md
-- 资产边界：@docs/system/asset_boundary.md
-- 路径规则说明：@docs/system/path_rules.md
-- 配置校验层说明：@docs/system/config_validation.md
-- agent 分层入口：@docs/system/agent_entrypoints.md
+This repository documents and versions the AI Hub operating layer. The live runtime is `D:\AI_Hub`.
 
-## 当前工作原则
-- 可脚本化的步骤优先脚本化
-- 外部项目通过 projects/ 中的接入点管理
-- outputs 是运行输出，knowledge 是长期沉淀
-- 修改系统结构时，应同步更新 docs / config / knowledge 中相关内容
-- 如果某项改动会长期影响系统，应考虑补 system note 或 decision note
+## Read First
 
-## 目录意识
-- scripts/：执行逻辑
-- knowledge/：长期记忆
-- docs/：稳定说明
-- projects/：外部项目接入点
+- System entry: `AGENTS.md`
+- Hub architecture: `docs/hub/architecture.md`
+- Hub operating model: `docs/hub/operating_model.md`
+- Stage 3 migration note: `docs/hub/migration_from_stage3.md`
+- Asset boundary: `docs/system/asset_boundary.md`
+- Path rules: `docs/system/path_rules.md`
 
-## Claude 工作方式
-- 优先读取与你当前操作目录相关的规则
-- 如果规则已经在 .claude/rules/ 中细分，不要把所有细节重复塞进这里
-- 如果你发现入口文件过长，应继续拆分，而不是继续堆在 CLAUDE.md
+## Working Principles
+
+- Prefer Hub scripts for daily runtime checks: `scripts/check_hub.ps1` and `scripts/start_hub.ps1`.
+- Treat `D:\AI_Hub` as runtime state and this repository as versioned control/docs.
+- Keep project source code external and register it before using Hub tooling.
+- Preserve existing historical deliverables and knowledge unless the user explicitly asks to clean them.
+- When changing long-term structure, update README, config, and docs together.
+
+## Directory Awareness
+
+- `config/`: Hub control plane and historical routing configs
+- `docs/`: stable explanations and migration notes
+- `scripts/`: deterministic entry points
+- `knowledge/`: historical/durable notes; new Hub notes should favor Obsidian
+- `outputs/`: generated reports
+- `projects/`: metadata for external project access

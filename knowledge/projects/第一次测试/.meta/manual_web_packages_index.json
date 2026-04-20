@@ -1,0 +1,26 @@
+[
+  {
+    "created_at": "2026-04-09T05:55:30",
+    "scene": "execution",
+    "scenario": "new_project_first_pass",
+    "task_type": "project_bootstrap_decompose",
+    "route": {
+      "scene": "execution",
+      "task_type": "project_bootstrap_decompose",
+      "action_name": "web_agent_collab",
+      "recommended_channel": "web_agent",
+      "default_channel": "deterministic",
+      "allow_fallback": true,
+      "fallback_channels": [
+        "deterministic",
+        "api"
+      ],
+      "source_cn": "系统默认",
+      "reason_cn": "该任务类型已纳入网页代理自动化通道。"
+    },
+    "package_dir": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\第一次测试\\manual_web_packages\\20260409_055530",
+    "task_prompt": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\第一次测试\\manual_web_packages\\20260409_055530\\task_prompt.md",
+    "result_schema": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\第一次测试\\manual_web_packages\\20260409_055530\\result_schema.md",
+    "result_template": "C:\\Users\\22358\\Desktop\\系统\\AI_agent_bootstrap_pack_stage3\\deliverables\\projects\\第一次测试\\manual_web_packages\\20260409_055530\\result_template.json"
+  }
+]
